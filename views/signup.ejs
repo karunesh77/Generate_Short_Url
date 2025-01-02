@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+    body{ 
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+            text-align: center;
+        }
+</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+</head>
+<body>
+    <h1>Signup</h1>
+
+    <form action="/users" method="POST">
+
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" required>
+        <br>
+        <br>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" required>
+        <br>
+        <br>
+        <label for="password">Password</label>  
+        <input type="password" name="password" id="password" required>
+        <br>
+        <br>
+        <input type="submit" value="SignUp">
+    </form>
+</body>
+</html>
