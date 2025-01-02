@@ -1,6 +1,6 @@
 
 const express = require("express");
-const cookiesParser = require("cookies-parser")
+const cookieParser = require('cookie-parser')
 
 const urlRoute = require("./routes/url")
 const path = require("path")
@@ -17,7 +17,7 @@ const port = 8001
 
 
 app.use(express.urlencoded({extended:false}))
-app.use(cookiesParser())
+app.use(cookieParser())
 app.use(express.json())
 
 
